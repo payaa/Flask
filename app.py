@@ -11,6 +11,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def index():
+    print ("this is a test")
     return render_template('index.html')
 
 @app.route('/upload', methods=['POST'])
